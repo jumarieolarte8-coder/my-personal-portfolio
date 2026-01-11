@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="eng">
+    <head>
+        <meta charset="UTF=8">
+        <meta name="viewpoint" content="width=device-width, initial-scale=1.0">
+        <title>My portfolio</title>
+        <link rel="stylesheet" href="bootstrap-5.3.8-dist/css/bootstrap.min.css">
+        <link rel="stylesheet" href="style.css">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
+    </head>
+
+ <body class="theme-light">
+ <nav class="navbar fixed-top navbar-expand-lg shadow-sm">
+  <div class="container">
+    <a class="navbar-brand fw-bold" href="#name">Jumarie 🤷‍♂️</a>
+
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navMenu">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navMenu">
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+        <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+        <li class="nav-item"><a class="nav-link" href="#projects">Projects</a></li>
+        <li class="nav-item"><a class="nav-link" href="#contacts">Contact</a></li>
+      </ul>
+
+      <div class="d-flex gap-2">
+        <button class="btn btn-sm btn-light" onclick="setTheme('light')">☀</button>
+        <button class="btn btn-sm btn-dark" onclick="setTheme('dark')">🌙</button>
+        <button class="btn btn-sm btn-warning" onclick="setTheme('sepia')">📜</button>
+      </div>
+    </div>
+  </div>
+ </nav>
+
+
+ <section class="container mt-5 pt-5">
+    <div class="p-5 rounded banner d-flex align-items-center justify-content-between">
+
+        <div >
+            <h1> Hello, My name is Jumarie Olarte</h1>
+            <p>Welcome to my Personal Portfolio</p>
+        </div>
+        <img src="/images/wait_lang.jpg" class="profile-img">
+    </div>
+ 
+<hr>
+ 
+ <section class="container my-5">
+  <div class="row g-4"> 
+    
+    <div class="col-md-4">
+      <a href="#about" class="card-link text-decoration-none">
+        <div class="card h-100 shadow-sm hover-card">
+          <div class="card-body">
+            <h5 class="card-title">About me</h5>
+            <p class="card-text">An information about me</p>
+          </div>
+        </div>
+      </a>
+    </div>
+
+    <div class="col-md-4">
+      <a href="#projects" class="card-link text-decoration-none">
+        <div class="card h-100 shadow-sm hover-card">
+          <div class="card-body">
+            <h5 class="card-title">Projects</h5>
+            <p class="card-text">Here is the projects me and my members created</p>
+          </div>
+        </div>
+      </a>
+    </div>
+
+    <div class="col-md-4">
+      <a href="#contacts" class="card-link text-decoration-none">
+        <div class="card h-100 shadow-sm hover-card">
+          <div class="card-body">
+            <h5 class="card-title">Contact me</h5>
+            <p class="card-text">Reach me out whenever you have any question about me and personal stuff</p>
+          </div>
+        </div>
+      </a>
+    </div>
+
+  </div> 
+ </section>
+
+ 
+
+ <section id="about" class="container py-5">
+  <div class="p-5 card hover-card rounded shadow-sm">
+        <h2>About Me</h2>
+        <p>Wait lang man di pa tapos</p>
+    </div>
+ </section>
+
+ <section id="projects" class="container py-5">
+    <div class="p-5 card hover-card rounded shadow-sm">
+        <h2>My Projects</h2>
+        <hr>
+        <div class="row align-items-center rounded">
+          <!--leftside-->
+          <div class="col-md-6 mt-2">
+            <h2>Project 1: Personal portfolio</h2>
+
+          </div>
+
+
+
+
+        </div>
+    </div>
+ </section>
+
+<section id="contacts" class="container py-5">
+  <div class="card hover-card p-5 rounded shadow-sm">
+    <div class="row align-items-center rounded">
+
+      <!--leftside-->
+      <div class="col-md-6">
+        <h2>Contact</h2>
+        <p>You can reach me through the following platforms:</p>
+        <hr>
+        <div class="contact-links mb-4 text-decoration-none">
+          <a href="https://discord.com/users/1277083748776673345" target="_blank"class="contact-link d-block">
+            <i class="bi bi-discord"></i> Discord
+          </a>
+
+          <a href="https://github.com/jumarieolarte8-coder" target="_blank" class="contact-link d-block">
+            <i class="bi bi-github"></i> GitHub
+          </a>
+
+          <a href="https://www.facebook.com/jumarie.olarte.5/" target="_blank" class="contact-link d-block">
+            <i class="bi bi-facebook"></i> Facebook
+          </a>
+        </div>
+
+        <h4>Or contact me via email</h4>
+
+        <form id="contactForm"
+              action="https://formspree.io/f/xqealgog"
+              method="POST">
+
+          <input type="text" name="_gotcha" style="display:none">
+
+          <div class="mb-3">
+            <input type="text"
+                   name="name"
+                   class="form-control"
+                   placeholder="Your name"
+                   required>
+          </div>
+
+          <div class="mb-3">
+            <input type="email"
+                   name="email"
+                   class="form-control"
+                   placeholder="Your email"
+                   required>
+          </div>
+
+          <div class="mb-3">
+            <textarea name="message"
+                      class="form-control"
+                      rows="4"
+                      placeholder="Type your message here..."
+                      required></textarea>
+          </div>
+          <button type="submit" class="btn btn-primary">
+            Send
+          </button>
+        </form>
+
+        <div id="formSuccess" class="alert alert-success mt-3 d-none">
+          Message successfully recieved! I'll read it later :P
+        </div>
+      </div>
+
+      <!--rightside-->
+      <div class="col-md-6 text-center d-none d-md-block">
+        <img src="images/pedro.jpg"
+             class="img-fluid rounded contact-image"
+             alt="Contact image">
+      </div>
+    </div>
+  </div>
+</section>
+
+
+
+
+
+
+ <section class="container my-5 card rounded">
+  <h4 class="m-3 ">My Gallery</h4>
+    <div class="photo-gallery">
+      <img src="images/jomjom.jpg" title="Since 2020">
+      <img src="images/matigas.jpg" title="Simula ng training arc">
+      <img src="images/jomjom.jpg" alt="">
+      <img src="images/jomjom.jpg" alt="">
+      <img src="images/jomjom.jpg" alt="">
+    </div>
+ </section>
+
+
+  <script src="bootstrap-5.3.8-dist/js/bootstrap.min.js"></script>
+  <script src="bootstrap-5.3.8-dist/js/bootstrap.bundle.min.js"></script>
+  <script src="theme.js"></script>
+  
+  <script>
+const form = document.getElementById("contactForm");
+const successMsg = document.getElementById("formSuccess");
+
+form.addEventListener("submit", async (e) => {
+  e.preventDefault();
+
+  const formData = new FormData(form);
+
+  try {
+    const response = await fetch(form.action, {
+      method: "POST",
+      body: formData,
+      headers: {
+        "Accept": "application/json"
+      }
+    });
+
+    const result = await response.json();
+
+    if (response.ok) {
+      successMsg.classList.remove("d-none");
+      form.reset();
+    } else {
+      alert(result.error || "Submission failed.");
+    }
+
+  } catch (err) {
+    alert("Network error.");
+  }
+ });
+ </script>
+
+
+ <script>
+  const navMenu = document.getElementById("navMenu");
+  const navLinks = navMenu.querySelectorAll(".nav-link");
+
+  navLinks.forEach(link => {
+    link.addEventListener("click", () => {
+      if (window.innerWidth < 992) {
+        const bsCollapse = bootstrap.Collapse.getInstance(navMenu)
+          || new bootstrap.Collapse(navMenu);
+        bsCollapse.hide();
+      }
+    });
+  });
+ </script>
+ </body>
+
+
+<hr>
+ <section class="card-footer text-info>">
+  <div class="container-sm my-1">
+    <div class="fs-6 fw-lighter">
+        <div class="card-text text-md-center">
+            2025-2026, Jumarie Olarte its all i made B)
+        </div>
+    </div>
+  </div>
+ </section>
+
+
+</html>

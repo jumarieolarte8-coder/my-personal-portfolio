@@ -1,0 +1,148 @@
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  transition: background 0.3s, color 0.3s;
+}
+
+.banner {
+  background-color: var(--banner-bg);
+}
+
+form {
+  max-width: 500px;
+}
+
+.profile-img {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 4px solid white;
+}
+
+.theme-light {
+  --banner-bg: #d9e3ec;
+  background: #ffffff;
+  color: #000;
+}
+
+.theme-dark {
+  --banner-bg: #1f2933;
+  background: #121212;
+  color: #ffffff;
+}
+
+.theme-sepia {
+  --banner-bg: #f1e7d0;
+  background: #f8f1e4;
+  color: #5b4636;
+}
+
+.theme-dark .card {
+  background-color: #1e1e1e;
+  color: #ffffff;
+}
+
+.theme-dark .navbar {
+  background-color: #1c1c1c;
+}
+
+.theme-sepia .card {
+  background-color: #f1e7d0;
+}
+
+.theme-sepia .navbar {
+  background-color: #f1e7d0;
+}
+
+.theme-dark .about {
+  background-color: #1e1e1e;
+  color: #ffffff;
+}
+
+.theme-dark .navbar-brand,
+.theme-dark .nav-link {
+  color: #ffffff !important;
+}
+
+.contact-links {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.card-link {
+  color: inherit;
+}
+
+.hover-card {
+  transition: transform 0.3s ease, box-shadow 0.3 ease;
+  cursor: pointer;
+}
+
+.hover-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 12px 25px rgba(0, 0, 0, 0.2);
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+section {
+  scroll-margin-top: 70px;
+}
+
+.hover-card {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  cursor: pointer;
+}
+
+.hover-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1) !important;
+}
+
+.photo-gallery {
+  display: flex;
+  gap: 16px;
+  overflow-x: auto;
+  padding: 10px;
+  scroll-snap-type: x mandatory;
+}
+
+.photo-gallery img {
+  height: 160px;
+  border-radius: 12px;
+  object-fit: cover;
+  scroll-snap-align: start;
+  flex-shrink: 0;
+  transition: transform 0.3s ease;
+}
+
+.photo-gallery img:hover {
+  transform: scale(1.05);
+}
+
+#formSuccess {
+  animation: fadeIn 0.4s ease-in-out;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(6px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.contact-image {
+  max-width: 500px;
+  max-height: 600px;
+  width: 100%;
+}
