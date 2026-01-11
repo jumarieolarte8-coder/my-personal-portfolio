@@ -1,274 +1,653 @@
 <!DOCTYPE html>
 <html lang="eng">
-    <head>
-        <meta charset="UTF=8">
-        <meta name="viewpoint" content="width=device-width, initial-scale=1.0">
-        <title>My portfolio</title>
-        <link rel="stylesheet" href="bootstrap-5.3.8-dist/css/bootstrap.min.css">
-        <link rel="stylesheet" href="style.css">
-        <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
-    </head>
 
- <body class="theme-light">
- <nav class="navbar fixed-top navbar-expand-lg shadow-sm">
-  <div class="container">
-    <a class="navbar-brand fw-bold" href="#name">Jumarie 🤷‍♂️</a>
+<head>
+  <meta charset="UTF=8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>damn almost done</title>
+  <link rel="stylesheet" href="bootstrap-5.3.8-dist/css/bootstrap.min.css">
+  <link rel="stylesheet" href="style.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
+</head>
 
-    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navMenu">
-      <span class="navbar-toggler-icon"></span>
-    </button>
+<body class="theme-light font-">
+  <nav class="navbar fixed-top navbar-expand-lg shadow-sm">
+    <div class="container">
+      <a class="navbar-brand fw-bold" href="https://www.roblox.com/users/345177226/profile" target="_blank">Jumarie
+        🤷‍♂️</a>
 
-    <div class="collapse navbar-collapse" id="navMenu">
-      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-        <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
-        <li class="nav-item"><a class="nav-link" href="#projects">Projects</a></li>
-        <li class="nav-item"><a class="nav-link" href="#contacts">Contact</a></li>
-      </ul>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navMenu">
+        <span class="navbar-toggler-icon"></span>
+      </button>
 
-      <div class="d-flex gap-2">
-        <button class="btn btn-sm btn-light" onclick="setTheme('light')">☀</button>
-        <button class="btn btn-sm btn-dark" onclick="setTheme('dark')">🌙</button>
-        <button class="btn btn-sm btn-warning" onclick="setTheme('sepia')">📜</button>
+      <div class="collapse navbar-collapse" id="navMenu">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+          <li class="nav-item"><a class="nav-link" href="#projects">Projects</a></li>
+          <li class="nav-item"><a class="nav-link" href="#contacts">Contact</a></li>
+        </ul>
+
+        <div class="d-flex gap-2">
+          <button class="btn btn-sm btn-light" onclick="setTheme('light')">☀</button>
+          <button class="btn btn-sm btn-dark" onclick="setTheme('dark')">🌙</button>
+          <button class="btn btn-sm btn-warning" onclick="setTheme('sepia')">📜</button>
+        </div>
       </div>
     </div>
-  </div>
- </nav>
+  </nav>
 
 
- <section class="container mt-5 pt-5">
+  <section class="container mt-5 pt-5">
     <div class="p-5 rounded banner d-flex align-items-center justify-content-between">
 
-        <div >
-            <h1> Hello, My name is Jumarie Olarte</h1>
-            <p>Welcome to my Personal Portfolio</p>
+      <div>
+        <h1> Hello, My name is Jumarie Olarte</h1>
+        <p class="fs-4">Welcome to my Personal Portfolio</p>
+        <h4><span id="typed"></span></h4>
+      </div>
+      <img src="/images/wait_lang.jpg" class="profile-img">
+    </div>
+
+    <hr>
+    <section class="container my-5">
+      <div class="row g-4">
+
+        <div class="col-md-4">
+          <a href="#about" class="card-link text-decoration-none">
+            <div class="card h-100 shadow-sm hover-card">
+              <div class="card-body">
+                <h5 class="card-title">About me</h5>
+                <p class="card-text">An information about me</p>
+              </div>
+            </div>
+          </a>
         </div>
-        <img src="/images/wait_lang.jpg" class="profile-img">
-    </div>
- 
-<hr>
- 
- <section class="container my-5">
-  <div class="row g-4"> 
-    
-    <div class="col-md-4">
-      <a href="#about" class="card-link text-decoration-none">
-        <div class="card h-100 shadow-sm hover-card">
-          <div class="card-body">
-            <h5 class="card-title">About me</h5>
-            <p class="card-text">An information about me</p>
-          </div>
+
+        <div class="col-md-4">
+          <a href="#projects" class="card-link text-decoration-none">
+            <div class="card h-100 shadow-sm hover-card">
+              <div class="card-body">
+                <h5 class="card-title">Projects</h5>
+                <p class="card-text">Here is the projects me and my members created</p>
+              </div>
+            </div>
+          </a>
         </div>
-      </a>
-    </div>
 
-    <div class="col-md-4">
-      <a href="#projects" class="card-link text-decoration-none">
-        <div class="card h-100 shadow-sm hover-card">
-          <div class="card-body">
-            <h5 class="card-title">Projects</h5>
-            <p class="card-text">Here is the projects me and my members created</p>
-          </div>
+        <div class="col-md-4">
+          <a href="#contacts" class="card-link text-decoration-none">
+            <div class="card h-100 shadow-sm hover-card">
+              <div class="card-body">
+                <h5 class="card-title">Contact me</h5>
+                <p class="card-text">Reach me out whenever you have any question about me and personal stuff</p>
+              </div>
+            </div>
+          </a>
         </div>
-      </a>
-    </div>
 
-    <div class="col-md-4">
-      <a href="#contacts" class="card-link text-decoration-none">
-        <div class="card h-100 shadow-sm hover-card">
-          <div class="card-body">
-            <h5 class="card-title">Contact me</h5>
-            <p class="card-text">Reach me out whenever you have any question about me and personal stuff</p>
-          </div>
+      </div>
+    </section>
+
+    <!--about-->
+    <section id="about" class="container py-5">
+      <div class="card hover-card overflow-hidden shadow-sm">
+        <div class="banner-wrapper">
+          <img src="/images/island.jpg" class="w-100 align-middle d-block banner-img rounded-2">
         </div>
-      </a>
-    </div>
 
-  </div> 
- </section>
+        <div class="p-4 container-fluid shadow-sm">
+          <h2 class="text-center mt-1 p-1">About Me</h2>
+          <hr>
+          <div class="row card-body card-text p-3">
+            <div class="col-md-6">
+              <img data-bs-toggle="modal" href="#galleryModal5" src="/images/engot.jpg" class="img-fluid about-img">
+            </div>
+            <div class="col-md-6">
+              <h3 class="text-center mb-3"><span id="typed2"> </span></h3>
+              <p class="text-justify card-text p-3 fs-3 rounded border shadow-sm">
+                I'm a 2nd year college student who is currently taking a Bachelor of Science in Information Technology
+                (BSIT) at Access Computer College, I created this personal portfolio just to learn more deeply about web
+                development, and also to make me a better developer. I know this is easy to make, but this was my big
+                step for learning in coding.
+              </p>
+            </div>
+            <hr>
+            <div class="card-body p-3">
+              <h3 class="text-center">My Skills</h3>
+              <p class="fs-6 text-center">Here is the list of my skills (a little bit)</p>
+            </div>
+            <div class="row p-4">
+              <div class="col-md-6 mb-4">
+                <div class="mb-3">
+                  <label class="form-label fw-bold">HTML</label>
+                  <div class="progress shadow-sm" style="height: 10px;">
+                    <div class="progress-bar bg-primary progress-bar-animated progress-bar-striped" style="width: 61%"
+                      aria-valuenow="61" aria-valuemin="0" aria-valuemax="100"></div>
+                  </div>
+                </div>
+                <div class="mb-3">
+                  <label class="form-label fw-bold">CSS</label>
+                  <div class="progress shadow-sm" style="height: 10px;">
+                    <div class="progress-bar bg-info progress-bar-animated progress-bar-striped" style="width: 52%"
+                      aria-valuenow="52" aria-valuemin="0" aria-valuemax="100"></div>
+                  </div>
+                </div>
+                <div class="mb-3">
+                  <label class="form-label fw-bold">Bootstrap</label>
+                  <div class="progress shadow-sm" style="height: 10px;">
+                    <div class="progress-bar bg-purple progress-bar-animated progress-bar-striped"
+                      style="width: 54%; background-color: #7952b3;" arial-valuenow="54" aria-valuemin="0"
+                      aria-valuemax="100"></div>
+                  </div>
+                </div>
+                <div class="mb-3">
+                  <label class="form-label fw-bold">JavaScript</label>
+                  <div class="progress shadow-sm" style="height: 10px;">
+                    <div class="progress-bar bg-warning progress-bar-animated progress-bar-striped" style="width: 18%"
+                      arial-valuenow="18" aria-valuemin="0" aria-valuemax="100"></div>
+                  </div>
+                </div>
+              </div>
 
- 
+              <div class="col-md-6 mb-4">
+                <div class="mb-3">
+                  <label class="form-label fw-bold">Java</label>
+                  <div class="progress shadow-sm" style="height: 10px;">
+                    <div class="progress-bar bg-danger progress-bar-animated progress-bar-striped" style="width: 26% "
+                      arial-valuenow="26" aria-valuemin="0" aria-valuemax="100"></div>
+                  </div>
+                </div>
+                <div class="mb-3">
+                  <label class="form-label fw-bold">Python</label>
+                  <div class="progress shadow-sm" style="height: 10px;">
+                    <div class="progress-bar bg-dark progress-bar-animated progress-bar-striped" style="width: 42%"
+                      arial-valuenow="42" aria-valuemin="0" aria-valuemax="100"></div>
+                  </div>
+                </div>
+                <div class="mb-3">
+                  <label class="form-label fw-bold">C++ / C#</label>
+                  <div class="progress shadow-sm" style="height: 10px;">
+                    <div class="progress-bar bg-success progress-bar-animated progress-bar-striped" style="width: 24%"
+                      arial-valuenow="24" aria-valuemin="0" aria-valuemax="100"></div>
+                  </div>
+                </div>
+                <div class="mb-3">
+                  <label class="form-label fw-bold">MySQL / PHP (Laragon) / Node.js</label>
+                  <div class="progress shadow-sm" style="height: 10px;">
+                    <div class="progress-bar progress-bar-animated progress-bar-striped"
+                      style="width: 18%; background-color: #4F5D95;" arial-valuenow="18" aria-valuemin="0"
+                      aria-valuemax="100"></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <hr>
+            <div class="card-body">
+              <h3 class="text-center">My Certificates</h3>
+              <p class="fs-6 text-center">Here is the certificate i take</p>
+              <div class="galleries card card-body">
 
- <section id="about" class="container py-5">
-  <div class="p-5 card hover-card rounded shadow-sm">
-        <h2>About Me</h2>
-        <p>Wait lang man di pa tapos</p>
-    </div>
- </section>
+                <div class="row row-cols-1 row-cols-md-3 g-4">
+                  <div class="col">
+                    <div class="card h-100 hover-card" data-bs-toggle="modal" data-bs-target="#certificateModal1"
+                      style="cursor: zoom-in;">
+                      <img src="/images/wait_lang.jpg" class="card-img-top" alt="...">
+                      <div class="card-body">
+                        <h5 class="card-title">graduated</h5>
+                        <p class="card-text">Bachelor of Science in Information Technology</p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col">
+                    <div class="card h-100 hover-card" data-bs-toggle="modal" data-bs-target="#certificateModal2"
+                      style="cursor: zoom-in;">
+                      <img src="images/certificates/bsit.png" class="card-img-top" alt="...">
+                      <div class="card-body">
+                        <h5 class="card-title">BSIT</h5>
+                        <p class="card-text">Bachelor of Science in Information Technology</p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col">
+                    <div class="card h-100 hover-card" data-bs-toggle="modal" data-bs-target="#certificateModal3"
+                      style="cursor: zoom-in;">
+                      <img src="images/certificates/bsit.png" class="card-img-top" alt="...">
+                      <div class="card-body">
+                        <h5 class="card-title">BSIT</h5>
+                        <p class="card-text">Bachelor of Science in Information Technology</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
 
- <section id="projects" class="container py-5">
-    <div class="p-5 card hover-card rounded shadow-sm">
+            </div>
+    </section>
+
+    <!--projects-->
+    <section id="projects" class="container py-5">
+      <div class="card hover-card p-5 rounded shadow-sm">
         <h2>My Projects</h2>
         <hr>
-        <div class="row align-items-center rounded">
-          <!--leftside-->
+
+        <div class="row">
           <div class="col-md-6 mt-2">
-            <h2>Project 1: Personal portfolio</h2>
+            <h3>Project 1: Responsive Personal Portfolio</h3>
+            <p>You are now currently looking at my portfolio.</p>
+
+            <div id="accordionProject">
+              <div class="card hover-card p-3 mt-3">
+                <div class="d-flex justify-content-between align-items-center" style="cursor: pointer;"
+                  data-bs-toggle="collapse" data-bs-target="#timelineCollapse" aria-expanded="true">
+                  <p class="mb-0 fs-3">When did you start making this?</p>
+                  <span class="fs-4 arrow-icon">⬇️</span>
+                </div>
+
+                <div class="collapse" id="timelineCollapse" data-bs-parent="#accordionProject">
+                  <div class="mt-3">
+                    <p>Here is a vertical timeline</p>
+                    <div class="project-timeline">
+
+                      <div class="timeline-item">
+                        <div class="timeline-dot"></div>
+                        <div class="timeline-content">
+                          <span class="timeline-date ">Dec 26-31 2025, to Jan 6, 2026</span>
+                          <p class="text-justify">
+                            I Started on working a personal portfolio, setting bootstrap and files and scripts, also i
+                            started
+                            working on layouts and columns, grids, and cards, and also the navigations. And i starts
+                            working on designs adding dark mode, and sepia mode (light mode is just default thing :P)
+                            and, also i started working on the about section, and also i started working on the contact
+                            section and also
+                            i started working on contact section first because thats the hardest part of connecting my
+                            accounts on specific websites (you can check the contacts), and once i finished that i
+                            started working on projects</p>
+                          <p class="text-justify"> if you want to know more about me, you can check the <a href="#about"
+                              class="text-decoration-none">About</a> section</p>
+                        </div>
+                      </div>
+
+                      <div class="timeline-item">
+                        <div class="timeline-dot"></div>
+                        <div class="timeline-content">
+                          <span class="timeline-date">Jan 6-7, 2026</span>
+                          <p class="text-justify">I start working on about section, adding banner, and fixing the
+                            design, also i started
+                            working on 2nd projects, which is an RFID project with an arduino and a rfid reader for
+                            students (kinda related on this project1 cuz i also working on it)</p>
+                        </div>
+                      </div>
+
+                      <div class="timeline-item">
+                        <div class="timeline-dot"></div>
+                        <div class="timeline-content">
+                          <span class="timeline-date">Feb 2, 1898</span>
+                          <p class="text-justify">dah dah dah</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="card hover-card p-2 mt-3">
+                <div class="d-flex justify-content-between align-items-center" style="cursor: pointer;"
+                  data-bs-toggle="collapse" data-bs-target="#timelineCollapse2" aria-expanded="true">
+                  <p class="mb-0 fs-3">What language are you using?</p>
+                  <span class="fs-4 arrow-icon">⬇️</span>
+                </div>
+
+                <div class="collapse" id="timelineCollapse2" data-bs-parent="#accordionProject">
+                  <div class="mt-3">
+                    <p class="text-justify">I use HTML, CSS and Javascript, and also bootstrap. I use bootstrap because
+                      its so easy to use and easy to design.</p>
+                    <p class="text-justify text-size">I havent used any other languages yet like react, vue, angular,
+                      and etc. but i plan to learn them in the future :)</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="card hover-card p-2 mt-3">
+              <div class="d-flex justify-content-between align-items-center" style="cursor: pointer;"
+                data-bs-toggle="collapse" data-bs-target="#timelineCollapse3" aria-expanded="true">
+                <p class="mb-0 fs-3">What tools are you using?</p>
+                <span class="fs-4 arrow-icon">⬇️</span>
+              </div>
+              <div class="collapse" id="timelineCollapse3" data-bs-parent="#accordionProject">
+                <div class="mt-3">
+                  <p class="text-justify">I 
+            </div>
 
           </div>
 
+          <div class="col-md-6 mt-2">
+            <div>
+              <h3>Project 2: Arduino based RFID Project </h3>
+              <p>RFID Project with an arduino and a rfid reader for students</p>
 
 
-
-        </div>
-    </div>
- </section>
-
-<section id="contacts" class="container py-5">
-  <div class="card hover-card p-5 rounded shadow-sm">
-    <div class="row align-items-center rounded">
-
-      <!--leftside-->
-      <div class="col-md-6">
-        <h2>Contact</h2>
-        <p>You can reach me through the following platforms:</p>
-        <hr>
-        <div class="contact-links mb-4 text-decoration-none">
-          <a href="https://discord.com/users/1277083748776673345" target="_blank"class="contact-link d-block">
-            <i class="bi bi-discord"></i> Discord
-          </a>
-
-          <a href="https://github.com/jumarieolarte8-coder" target="_blank" class="contact-link d-block">
-            <i class="bi bi-github"></i> GitHub
-          </a>
-
-          <a href="https://www.facebook.com/jumarie.olarte.5/" target="_blank" class="contact-link d-block">
-            <i class="bi bi-facebook"></i> Facebook
-          </a>
-        </div>
-
-        <h4>Or contact me via email</h4>
-
-        <form id="contactForm"
-              action="https://formspree.io/f/xqealgog"
-              method="POST">
-
-          <input type="text" name="_gotcha" style="display:none">
-
-          <div class="mb-3">
-            <input type="text"
-                   name="name"
-                   class="form-control"
-                   placeholder="Your name"
-                   required>
+            </div>
           </div>
 
-          <div class="mb-3">
-            <input type="email"
-                   name="email"
-                   class="form-control"
-                   placeholder="Your email"
-                   required>
-          </div>
-
-          <div class="mb-3">
-            <textarea name="message"
-                      class="form-control"
-                      rows="4"
-                      placeholder="Type your message here..."
-                      required></textarea>
-          </div>
-          <button type="submit" class="btn btn-primary">
-            Send
-          </button>
-        </form>
-
-        <div id="formSuccess" class="alert alert-success mt-3 d-none">
-          Message successfully recieved! I'll read it later :P
         </div>
       </div>
+    </section>
 
-      <!--rightside-->
-      <div class="col-md-6 text-center d-none d-md-block">
-        <img src="images/pedro.jpg"
-             class="img-fluid rounded contact-image"
-             alt="Contact image">
+    <!--contacts-->
+    <section id="contacts" class="container py-5">
+      <div class="card hover-card p-5 rounded shadow-sm">
+        <div class="row rounded">
+
+          <!--leftside-->
+          <div class="col-md-6">
+            <h2>Contact</h2>
+            <p>You can reach me through the following platforms:</p>
+            <hr>
+            <div class="row rounded">
+              <div class="col-md-6 mb-4">
+                <div class="contact-links"> <a href="https://discord.com/users/1277083748776673345" target="_blank"
+                    class="contact-link d-block mb-2 text-decoration-none">
+                    <i class="bi bi-discord"></i> Discord
+                  </a>
+                  <a href="https://github.com/jumarieolarte8-coder" target="_blank"
+                    class="contact-link d-block mb-2 text-decoration-none">
+                    <i class="bi bi-github"></i> GitHub
+                  </a>
+                  <a href="https://www.facebook.com/jumarie.olarte.5/" target="_blank"
+                    class="contact-link d-block text-decoration-none">
+                    <i class="bi bi-facebook"></i> Facebook
+                  </a>
+                </div>
+              </div>
+
+              <div class="col-md-6 mb-4">
+                <div class="contact-links">
+                  <a href="https://www.instagram.com/wtf_jomjom/" target="_blank"
+                    class="contact-link d-block mb-2 text-decoration-none">
+                    <i class="bi bi-instagram"></i> Instagram
+                  </a>
+                  <a href="later" target="_blank" class="contact-link d-block mb-2 text-decoration-none">
+                    <i class="bi bi-linkedin"></i> LinkedIn
+                  </a>
+                  <a href="later" target="_blank" class="contact-link d-block text-decoration-none">
+                    <i class="bi bi-twitter"></i> Twitter
+                  </a>
+                </div>
+              </div>
+            </div>
+            <h4>Or contact me via email</h4>
+
+            <form id="contactForm" action="https://formspree.io/f/xqealgog" method="POST">
+
+              <input type="text" name="_gotcha" style="display:none">
+
+              <div class="mb-3">
+                <input type="text" name="name" class="form-control" placeholder="Your name" required>
+              </div>
+
+              <div class="mb-3">
+                <input type="email" name="email" class="form-control" placeholder="Your email" required>
+              </div>
+
+              <div class="mb-3">
+                <textarea name="message" class="form-control" rows="4" placeholder="Type Here" required></textarea>
+              </div>
+              <button type="submit" class="btn btn-primary">
+                Send
+              </button>
+            </form>
+
+            <div id="formSuccess" class="alert alert-success mt-3 d-none">
+              Message successfully recieved! I'll read it later :P
+            </div>
+          </div>
+
+          <!--rightside-->
+          <div class="col-md-6 text-center d-none d-md-block mt-5">
+            <img src="images/pedro.jpg" class="img-fluid contact-image">
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="container my-5">
+      <h4 class="m-3">My Gallery (Click to expand)</h4>
+      <div class="row g-3">
+
+        <div class="col-md-4">
+          <div class="card hover-card border-0 shadow-sm" style="cursor: zoom-in;" data-bs-toggle="modal"
+            data-bs-target="#galleryModal1">
+            <img src="images/jomjom.jpg" class="card-img-top rounded" alt="Since 2020">
+          </div>
+        </div>
+
+        <div class="col-md-4">
+          <div class="card hover-card border-0 shadow-sm" style="cursor: zoom-in;" data-bs-target="#galleryModal2"
+            data-bs-toggle="modal">
+            <img src="images/matigas.jpg" class="card-img-top rounded" alt="Training">
+          </div>
+        </div>
+
+        <div class="col-md-4">
+          <div class="card hover-card border-0 shadow-sm" style="cursor: zoom-in;" data-bs-target="#galleryModal3"
+            data-bs-toggle="modal">
+            <img src="images/2024.jpg" class="card-img-top rounded" alt="Training">
+          </div>
+        </div>
+
+        <div class="col-md-4">
+          <div class="card hover-card border-0 shadow-sm" style="cursor: zoom-in;" data-bs-target="#galleryModal4"
+            data-bs-toggle="modal">
+            <img src="images/halloween_party.jpg" class="card-img-top rounded" alt="Training">
+          </div>
+        </div>
+
+        <div class="col-md-4">
+          <div class="card hover-card border-0 shadow-sm" style="cursor: zoom-in;" data-bs-target="#galleryModal5"
+            data-bs-toggle="modal">
+            <img src="images/engot.jpg" class="card-img-top rounded" alt="Training">
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <script src="bootstrap-5.3.8-dist/js/bootstrap.bundle.min.js"></script>
+    <script src="theme.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+
+    <script>
+      const form = document.getElementById("contactForm");
+      const successMsg = document.getElementById("formSuccess");
+
+      form.addEventListener("submit", async (e) => {
+        e.preventDefault();
+
+        const formData = new FormData(form);
+
+        try {
+          const response = await fetch(form.action, {
+            method: "POST",
+            body: formData,
+            headers: {
+              "Accept": "application/json"
+            }
+          });
+
+          const result = await response.json();
+
+          if (response.ok) {
+            successMsg.classList.remove("d-none");
+            form.reset();
+          } else {
+            alert(result.error || "Submission failed");
+          }
+
+        } catch (err) {
+          alert("Network error");
+        }
+      });
+    </script>
+
+
+    <script>
+      const navMenu = document.getElementById("navMenu");
+      const navLinks = navMenu.querySelectorAll(".nav-link");
+
+      navLinks.forEach(link => {
+        link.addEventListener("click", () => {
+          if (window.innerWidth < 992) {
+            const bsCollapse = bootstrap.Collapse.getInstance(navMenu)
+              || new bootstrap.Collapse(navMenu);
+            bsCollapse.hide();
+          }
+        });
+      });
+    </script>
+
+    <script>
+      new Typed("#typed", {
+        strings: ["Tester", "Web Developer", "College student", "Determined person B)"],
+        typeSpeed: 60,
+        backSpeed: 40,
+        loop: true
+      });
+    </script>
+
+    <script>
+      new Typed("#typed2", {
+        strings: ["Jumarie Olarte", "JomJom", "Aspiring front-end developer", "Determined person B)"],
+        typeSpeed: 60,
+        backSpeed: 40,
+        loop: true
+      })
+    </script>
+
+    <script>
+      var popoverTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="popover"]'))
+      var popoverList = popoverTriggerList.map(function (popoverTriggerEl) {
+        return new bootstrap.Popover(popoverTriggerEl)
+      })
+    </script>
+
+    <hr>
+    <footer class="text-info pb-4 container-sm my-3 text-md-center">
+      <div class="fs-6">
+        <small class="fw-lighter">2025-2026, Jumarie Olarte its all i made B) (not all of it though :) )</small>
+      </div>
+    </footer>
+
+    <!-- gallery modal -->
+    <div class="modal fade" id="galleryModal1" tabindex="-1" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content border-0 shadow-lg">
+          <div class="modal-body p-0">
+            <img src="images/jomjom.jpg" class="img-fluid w-100 rounded-top">
+          </div>
+          <div class="modal-footer d-block border-0 p-4">
+            <h5 class="fw-bold text-center">Palayang Jomjom</h5>
+            <hr>
+            <p class="text-secondary">Nasa probinsya ng davao del sure man, di ka mabubuhay kapag wala kang kaaway na
+              langaw</p>
+            <div class="text-end">
+              <button type="button" class="btn btn-sm btn-outline-secondary" data-bs-dismiss="modal">Close</button>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
-  </div>
-</section>
 
-
-
-
-
-
- <section class="container my-5 card rounded">
-  <h4 class="m-3 ">My Gallery</h4>
-    <div class="photo-gallery">
-      <img src="images/jomjom.jpg" title="Since 2020">
-      <img src="images/matigas.jpg" title="Simula ng training arc">
-      <img src="images/jomjom.jpg" alt="">
-      <img src="images/jomjom.jpg" alt="">
-      <img src="images/jomjom.jpg" alt="">
-    </div>
- </section>
-
-
-  <script src="bootstrap-5.3.8-dist/js/bootstrap.min.js"></script>
-  <script src="bootstrap-5.3.8-dist/js/bootstrap.bundle.min.js"></script>
-  <script src="theme.js"></script>
-  
-  <script>
-const form = document.getElementById("contactForm");
-const successMsg = document.getElementById("formSuccess");
-
-form.addEventListener("submit", async (e) => {
-  e.preventDefault();
-
-  const formData = new FormData(form);
-
-  try {
-    const response = await fetch(form.action, {
-      method: "POST",
-      body: formData,
-      headers: {
-        "Accept": "application/json"
-      }
-    });
-
-    const result = await response.json();
-
-    if (response.ok) {
-      successMsg.classList.remove("d-none");
-      form.reset();
-    } else {
-      alert(result.error || "Submission failed.");
-    }
-
-  } catch (err) {
-    alert("Network error.");
-  }
- });
- </script>
-
-
- <script>
-  const navMenu = document.getElementById("navMenu");
-  const navLinks = navMenu.querySelectorAll(".nav-link");
-
-  navLinks.forEach(link => {
-    link.addEventListener("click", () => {
-      if (window.innerWidth < 992) {
-        const bsCollapse = bootstrap.Collapse.getInstance(navMenu)
-          || new bootstrap.Collapse(navMenu);
-        bsCollapse.hide();
-      }
-    });
-  });
- </script>
- </body>
-
-
-<hr>
- <section class="card-footer text-info>">
-  <div class="container-sm my-1">
-    <div class="fs-6 fw-lighter">
-        <div class="card-text text-md-center">
-            2025-2026, Jumarie Olarte its all i made B)
+    <div class="modal fade" id="galleryModal2" tabindex="-1" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content border-0 shadow-lg">
+          <div class="modal-body p-0">
+            <img src="images/matigas.jpg" class="img-fluid w-100 rounded-top">
+          </div>
+          <div class="modal-footer d-block border-0 p-4">
+            <h5 class="fw-bold text-center">2025-2026: Training Arc</h5>
+            <hr>
+            <p class="text-secondary">Simple tao pero matigas na nalarawan</p>
+            <div class="text-end">
+              <button type="button" class="btn btn-sm btn-outline-secondary" data-bs-dismiss="modal">Close</button>
+            </div>
+          </div>
         </div>
+      </div>
     </div>
-  </div>
- </section>
 
+    <div class="modal fade" id="galleryModal3" tabindex="-1" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content border-0 shadow-lg">
+          <div class="modal-body p-0">
+            <img src="images/2024.jpg" class="img-fluid w-100 rounded-top">
+          </div>
+          <div class="modal-footer d-block border-0 p-4">
+            <h5 class="fw-bold text-center">New year sm like that</h5>
+            <hr>
+            <p class="text-secondary">mukhang tanga ako dito legit lang</p>
+            <div class="text-end">
+              <button type="button" class="btn btn-sm btn-outline-secondary" data-bs-dismiss="modal">Close</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="modal fade" id="galleryModal4" tabindex="-1" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content border-0 shadow-lg">
+          <div class="modal-body p-0">
+            <img src="images/halloween_party.jpg" class="img-fluid w-100 rounded-top">
+          </div>
+          <div class="modal-footer d-block border-0 p-4">
+            <h5 class="fw-bold text-center">Malupit na picture nakuhanan sa school (halloween party)</h5>
+            <hr>
+            <p class="text-secondary">tanga ginamit ko yung camera ng kuya ko yung nikon d800 tas ganito yung quality
+              hahahaha (di ko inedit yung picture kaya ganun yon)</p>
+            <div class="text-end">
+              <button type="button" class="btn btn-sm btn-outline-secondary" data-bs-dismiss="modal">Close</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="modal fade" id="galleryModal5" tabindex="-1" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content border-0 shadow-lg">
+          <div class="modal-body p-0">
+            <img src="images/engot.jpg" class="img-fluid w-100 rounded-top">
+          </div>
+          <div class="modal-footer d-block border-0 p-4">
+            <h5 class="fw-bold text-center">Engot sa Southern leyte</h5>
+            <hr>
+            <p class="text-secondary">Nasa probinsya ng Southern Leyte,nasa bahay ng pinsan ko, medyo tanga tanga lang
+              tignan dito pero matino din </p>
+            <div class="text-end">
+              <button type="button" class="btn btn-sm btn-outline-secondary" data-bs-dismiss="modal">Close</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!--certificates modal-->
+    <div class="modal fade" id="certificateModal1" tabindex="1" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content border-0 shadow-lg">
+          <div class="modal-body">
+            <img src="/images/wait_lang.jpg" class="img-fluid w-100 rounded-top">
+          </div>
+          <div class="modal-footer d-block border-0 p-4">
+            <h5 class="fw-bold text-center">certificates</h5>
+            <hr>
+            <p class="text-secondary">wait lang man di pa ako graduated student man</p>
+            <div class="text-end">
+              <button type="button" class="btn btn-sm btn-outline-secondary" data-bs-dismiss="modal">Sirado</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+</body>
 
 </html>
