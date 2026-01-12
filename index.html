@@ -185,40 +185,65 @@
             <div class="card-body">
               <h3 class="text-center">My Certificates</h3>
               <p class="fs-6 text-center">Here is the certificate i take</p>
-              <div class="galleries card card-body">
 
-                <div class="row row-cols-1 row-cols-md-3 g-4">
-                  <div class="col">
-                    <div class="card h-100 hover-card" data-bs-toggle="modal" data-bs-target="#certificateModal1"
-                      style="cursor: zoom-in;">
-                      <img src="images/wait_lang.jpg" class="card-img-top" alt="...">
-                      <div class="card-body">
-                        <h5 class="card-title">graduated</h5>
-                        <p class="card-text">Bachelor of Science in Information Technology</p>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="col">
-                    <div class="card h-100 hover-card" data-bs-toggle="modal" data-bs-target="#certificateModal2"
-                      style="cursor: zoom-in;">
-                      <img src="images/certificates/bsit.png" class="card-img-top" alt="...">
-                      <div class="card-body">
-                        <h5 class="card-title">BSIT</h5>
-                        <p class="card-text">Bachelor of Science in Information Technology</p>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="col">
-                    <div class="card h-100 hover-card" data-bs-toggle="modal" data-bs-target="#certificateModal3"
-                      style="cursor: zoom-in;">
-                      <img src="images/certificates/bsit.png" class="card-img-top" alt="...">
-                      <div class="card-body">
-                        <h5 class="card-title">BSIT</h5>
-                        <p class="card-text">Bachelor of Science in Information Technology</p>
-                      </div>
-                    </div>
-                  </div>
+
+              <div id="certificateCarousel" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-indicators">
+                  <button type="button" data-bs-target="#certificateCarousel" data-bs-slide-to="0" class="active"
+                    aria-current="true" aria-label="Slide 1"></button>
+                  <button type="button" data-bs-target="#certificateCarousel" data-bs-slide-to="1"
+                    aria-label="Slide 2"></button>
+                  <button type="button" data-bs-target="#certificateCarousel" data-bs-slide-to="2"
+                    aria-label="Slide 3"></button>
                 </div>
+
+                <div class="carousel-inner p-4">
+
+                  <div class="carousel-item active">
+                    <div class="card h-100 hover-card mx-auto shadow-sm" style="max-width: 500px; cursor: zoom-in;"
+                      data-bs-toggle="modal" data-bs-target="#certificateModal1">
+                      <img src="images/wait_lang.jpg" class="card-img-top" alt="Graduated">
+                      <div class="card-body text-center">
+                        <h5 class="card-title">Graduated</h5>
+                        <p class="card-text">WIP</p>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="carousel-item">
+                    <div class="card h-100 hover-card mx-auto shadow-sm" style="max-width: 500px; cursor: zoom-in;"
+                      data-bs-toggle="modal" data-bs-target="#certificateModal2">
+                      <img src="images/certificates/bsit.png" class="card-img-top" alt="BSIT">
+                      <div class="card-body text-center">
+                        <h5 class="card-title">WIP</h5>
+                        <p class="card-text">WIP</p>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="carousel-item">
+                    <div class="card h-100 hover-card mx-auto shadow-sm" style="max-width: 500px; cursor: zoom-in;"
+                      data-bs-toggle="modal" data-bs-target="#certificateModal3">
+                      <img src="images/certificates/bsit.png" class="card-img-top" alt="BSIT">
+                      <div class="card-body text-center">
+                        <h5 class="card-title">WIP</h5>
+                        <p class="card-text">WIP</p>
+                      </div>
+                    </div>
+                  </div>
+
+                </div>
+
+                <button class="carousel-control-prev" type="button" data-bs-target="#certificateCarousel"
+                  data-bs-slide="prev">
+                  <span class="carousel-control-prev-icon bg-dark rounded-circle" aria-hidden="true"></span>
+                  <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#certificateCarousel"
+                  data-bs-slide="next">
+                  <span class="carousel-control-next-icon bg-dark rounded-circle" aria-hidden="true"></span>
+                  <span class="visually-hidden">Next</span>
+                </button>
               </div>
 
             </div>
@@ -226,122 +251,133 @@
 
     <!--projects-->
     <section id="projects" class="container py-5">
-      <div class="card hover-card p-5 rounded shadow-sm">
-        <h2>My Projects</h2>
+      <div class="card hover-card p-4 p-md-5 rounded shadow-sm">
+        <h2 class="text-center">My Projects</h2>
         <hr>
 
-        <div class="row">
-          <div class="col-md-6 mt-2">
-            <h3>Project 1: Responsive Personal Portfolio</h3>
-            <p>You are now currently looking at my portfolio.</p>
+        <div class="row g-4">
+
+          <div class="col-md-6">
+            <h3 class="fw-bold mt-2">Project 1: Responsive Personal Portfolio</h3>
+            <p class="text-secondary">You are now currently looking at my portfolio.</p>
+            <div class="mt-2">
+              <span class="badge rounded-pill bg-primary">HTML</span>
+              <span class="badge rounded-pill bg-success">CSS</span>
+              <span class="badge rounded-pill bg-warning text-dark">JavaScript</span>
+              <span class="badge rounded-pill bg-primary">Bootstrap</span>
+            </div>
 
             <div id="accordionProject">
-              <div class="card hover-card p-3 mt-3">
+              <div class="card hover-card p-3 mt-3 shadow-sm">
                 <div class="d-flex justify-content-between align-items-center" style="cursor: pointer;"
-                  data-bs-toggle="collapse" data-bs-target="#timelineCollapse" aria-expanded="true">
-                  <p class="mb-0 fs-3">When did you start making this?</p>
-                  <span class="fs-4 arrow-icon">⬇️</span>
+                  data-bs-toggle="collapse" data-bs-target="#timelineCollapse">
+                  <p class="mb-0 fs-5 fw-bold">When did you start making this?</p>
+                  <span class="fs-4 arrow-icon text-primary">⬇️</span>
                 </div>
-
-                <div class="collapse" id="timelineCollapse" data-bs-parent="#accordionProject">
+                <div class="collapse show" id="timelineCollapse" data-bs-parent="#accordionProject">
                   <div class="mt-3">
-                    <p>Here is a vertical timeline</p>
+                    <p class="small text-muted">Here is a vertical timeline</p>
                     <div class="project-timeline">
-
                       <div class="timeline-item">
                         <div class="timeline-dot"></div>
                         <div class="timeline-content">
-                          <span class="timeline-date ">Dec 26-31 2025, to Jan 6, 2026</span>
-                          <p class="text-justify">
-                            I Started on working a personal portfolio, setting bootstrap and files and scripts, also i
-                            started
-                            working on layouts and columns, grids, and cards, and also the navigations. And i starts
-                            working on designs adding dark mode, and sepia mode (light mode is just default thing :P)
-                            and, also i started working on the about section, and also i started working on the contact
-                            section and also
-                            i started working on contact section first because thats the hardest part of connecting my
-                            accounts on specific websites (you can check the contacts), and once i finished that i
-                            started working on projects</p>
-                          <p class="text-justify"> if you want to know more about me, you can check the <a href="#about"
-                              class="text-decoration-none">About</a> section</p>
+                          <span class="timeline-date fw-semibold">Near-end December 2025</span>
+                          <p class="text-justify small">I started making this portfolio in december because thats the
+                            time I want to learn more deeply about coding, also thats the time i upgraded my laptop
+                            thanks to my dad :) and i start planning first on what project i should make, so i decided
+                            to make this portfolio :D downloading vs code, github, and bootstrap (i tried making
+                            portfolio on different tools like tailwindcss but its not my thing YET)</p>
                         </div>
                       </div>
-
                       <div class="timeline-item">
                         <div class="timeline-dot"></div>
                         <div class="timeline-content">
-                          <span class="timeline-date">Jan 6-7, 2026</span>
-                          <p class="text-justify">I start working on about section, adding banner, and fixing the
-                            design, also i started
-                            working on 2nd projects, which is an RFID project with an arduino and a rfid reader for
-                            students (kinda related on this project1 cuz i also working on it)</p>
+                          <span class="timeline-date">Early January 2026</span>
+                          <p class="text-justify small">My first ever finish is the navbar and the banner, and i started
+                            making the timeline on the project section, and the contact section, i didnt start on about
+                            me section because i keep thinking on what i put here that is appealing to anyone who visit
+                            my portfolio.</p>
                         </div>
                       </div>
-
                       <div class="timeline-item">
                         <div class="timeline-dot"></div>
                         <div class="timeline-content">
-                          <span class="timeline-date">Feb 2, 1898</span>
-                          <p class="text-justify">dah dah dah</p>
+                          <span class="timeline-date">WIP</span>
+                          <p class="text-justify small">WIP soon</p>
+                        </div>
+                      </div>
+                      <div class="timeline-item">
+                        <div class="timeline-dot"></div>
+                        <div class="timeline-content">
+                          <span class="timeline-date">WIP</span>
+                          <p class="text-justify small">Wip soon</p>
                         </div>
                       </div>
                     </div>
                   </div>
                 </div>
               </div>
-              <div class="card hover-card p-2 mt-3">
-                <div class="d-flex justify-content-between align-items-center" style="cursor: pointer;"
-                  data-bs-toggle="collapse" data-bs-target="#timelineCollapse2" aria-expanded="true">
-                  <p class="mb-0 fs-3">What language are you using?</p>
-                  <span class="fs-4 arrow-icon">⬇️</span>
-                </div>
 
+              <div class="card hover-card p-3 mt-3 shadow-sm">
+                <div class="d-flex justify-content-between align-items-center" style="cursor: pointer;"
+                  data-bs-toggle="collapse" data-bs-target="#timelineCollapse2">
+                  <p class="mb-0 fs-5 fw-bold">What language are you using?</p>
+                  <span class="fs-4 arrow-icon text-primary">⬇️</span>
+                </div>
                 <div class="collapse" id="timelineCollapse2" data-bs-parent="#accordionProject">
                   <div class="mt-3">
-                    <p class="text-justify">I use HTML, CSS and Javascript, and also bootstrap. I use bootstrap because
-                      its so easy to use and easy to design.</p>
-                    <p class="text-justify text-size">I havent used any other languages yet like react, vue, angular,
-                      and etc. but i plan to learn them in the future :)</p>
+                    <p class="text-justify small">I use HTML, CSS and Javascript, and also bootstrap.</p>
+                  </div>
+                </div>
+              </div>
+              <div class="card hover-card p-3 mt-3 shadow-sm">
+                <div class="d-flex justify-content-between align-items-center" style="cursor: pointer;"
+                  data-bs-toggle="collapse" data-bs-target="#timelineCollapse3">
+                  <p class="mb-0 fs-5 fw-bold">Wip</p>
+                  <span class="fs-4 arrow-icon text-primary">⬇️</span>
+                </div>
+                <div class="collapse" id="timelineCollapse3" data-bs-parent="#accordionProject">
+                  <div class="mt-3">
+                    <p class="text-justify small">WIP soon</p>
                   </div>
                 </div>
               </div>
             </div>
-            <div class="card hover-card p-2 mt-3">
-              <div class="d-flex justify-content-between align-items-center" style="cursor: pointer;"
-                data-bs-toggle="collapse" data-bs-target="#timelineCollapse3" aria-expanded="true">
-                <p class="mb-0 fs-3">What tools are you using?</p>
-                <span class="fs-4 arrow-icon">⬇️</span>
-              </div>
-              <div class="collapse" id="timelineCollapse3" data-bs-parent="#accordionProject">
-                <div class="mt-3">
-                  <p class="text-justify">I use vscode as my code editor, and also i use github as my version control
-                    system.</p>
+          </div>
+
+          <div class="col-md-6">
+            <h3 class="fw-bold mt-2">Project 2: Arduino Based RFID Project</h3>
+
+            <div id="project2Carousel" class="carousel slide shadow-sm rounded overflow-hidden mb-3"
+              data-bs-ride="carousel">
+              <div class="carousel-inner">
+                <div class="carousel-item active">
+                  <img src="images/wait_lang.jpg" class="d-block w-100 project-carousel-img" alt="Arduino Uno">
+                  <div class="carousel-caption d-none d-md-block bg-dark bg-opacity-50 rounded p-1">
+                    <p class="mb-0 small">WIP</p>
+                  </div>
+                </div>
+                <div class="carousel-item">
+                  <img src="images/wait_lang.jpg" class="d-block w-100 project-carousel-img" alt="Final Setup">
+                  <div class="carousel-caption d-none d-md-block bg-dark bg-opacity-50 rounded p-1">
+                    <p class="mb-0 small">WIP</p>
+                  </div>
                 </div>
               </div>
+            </div>
 
+            <p class="text-justify text-secondary small">
+              Tatapusin pa namin yung arduino pre saglit lang
+            </p>
+            <div class="mt-3">
+              <span class="badge rounded-pill bg-primary">Arduino</span>
+              <span class="badge rounded-pill bg-success">C++</span>
+              <span class="badge rounded-pill bg-warning text-dark">Hardware</span>
             </div>
           </div>
-          <div class="col-md-6 mt-2">
-                <h3>Projects 2: Arduino Based RFID Project</h3>
-                <p class="text-justify">Me and my classmates working on this project. Here is the following questions:</p>
-                <div class="row">
-                  <div class="col-6">
-                    <div class="card hover-card p-2 mt-3">
-                      <div class="d-flex justify-content-between align-items-center" style="cursor: pointer;"
-                        data-bs-toggle="collapse" data-bs-target="#timelineCollapse4" aria-expanded="true">
-                        <p class="mb-0 fs-3">What is the project about?</p>
-                        <span class="fs-4 arrow-icon">⬇️</span>
-                      </div>
-                      <div class="collapse" id="timelineCollapse4" data-bs-parent="#accordionProject">
-                        <div class="mt-3">
-                          <p class="text-justify">Its about the importance of using rfid in our school since nobody implemented this in our school so we start working on it.</p>
-                        </div>
-                      </div>
-                    </div>
-              </div>
-          
-            </div>
+
         </div>
+      </div>
     </section>
 
     <!--contacts-->
@@ -647,10 +683,11 @@
 
     <!--certificates modal-->
     <div class="modal fade" id="certificateModal1" tabindex="1" aria-hidden="true">
-      <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-dialog modal-dialog-centered modal-lg">
         <div class="modal-content border-0 shadow-lg">
           <div class="modal-body">
-            <img src="images/wait_lang.jpg" class="img-fluid w-100 rounded-top">
+            <img src="images/wait_lang.jpg" class="img-fluid w-100 rounded-top"
+              style="max-height: 70vh; width: 100%; object-fit: contain;">
           </div>
           <div class="modal-footer d-block border-0 p-4">
             <h5 class="fw-bold text-center text-dark">certificates</h5>
