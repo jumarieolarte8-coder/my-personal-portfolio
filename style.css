@@ -339,15 +339,12 @@ section {
   background: #f8f9fa;
 }
 
-
-/* Make all project carousel images the same height */
 .project-carousel-img {
     height: 350px;
-    object-fit: cover; /* This prevents squishing the Arduino parts */
+    object-fit: cover;
     object-position: center;
 }
 
-/* Optional: Add a slight zoom effect when the slide changes */
 .carousel-item.active img {
     animation: zoom 5s infinite alternate;
 }
@@ -357,14 +354,12 @@ section {
     to { transform: scale(1.05); }
 }
 
-/* This keeps the Arduino images consistent and prevents layout shifts */
 .project-carousel-img {
-    height: 350px; /* Adjust this to match your accordion height */
+    height: 350px;
     object-fit: cover;
     object-position: center;
 }
 
-/* Fixes the text overlap seen in your last screenshot */
 .col-md-6 {
     display: flex;
     flex-direction: column;
