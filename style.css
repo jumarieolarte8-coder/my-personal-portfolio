@@ -225,7 +225,7 @@ section {
   top: 0px;
   bottom: 0px;
   width: 2px;
-  background: #2c2c2c; /* Color for light mode */
+  background: #2c2c2c;
   z-index: 1;
 }
 
@@ -367,11 +367,11 @@ section {
 
 .feedback-btn {
     position: fixed;
-    bottom: 20px;   /* Distance from bottom */
-    right: 20px;    /* Distance from right corner */
+    bottom: 20px;
+    right: 20px;
     width: 60px;
     height: 60px;
-    z-index: 1050;  /* Ensure it appears above other elements */
+    z-index: 1050; 
     background-color: #007bff;
     color: #fff;
     border-radius: 50%;
