@@ -13,6 +13,7 @@
 <body class="theme-light font-">
   <nav class="navbar fixed-top navbar-expand-lg shadow-sm">
     <div class="container">
+      
       <a class="navbar-brand fw-bold" href="https://www.roblox.com/users/345177226/profile" target="_blank">Jumarie
         🤷‍♂️</a>
 
@@ -22,7 +23,7 @@
 
       <div class="collapse navbar-collapse" id="navMenu">
         <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-          <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+          <li class="nav-item"><a class="nav-link" href="#about">About Me</a></li>
           <li class="nav-item"><a class="nav-link" href="#projects">Projects</a></li>
           <li class="nav-item"><a class="nav-link" href="#contacts">Contact</a></li>
         </ul>
@@ -89,14 +90,14 @@
     </section>
 
     <!--about-->
-    <section id="about" class="container py-5">
+    <section class="container py-5">
       <div class="card hover-card overflow-hidden shadow-sm">
         <div class="banner-wrapper">
           <img src="images/island.jpg" class="w-100 align-middle d-block banner-img rounded-2">
         </div>
 
         <div class="p-4 container-fluid shadow-sm">
-          <h2 class="text-center mt-1 p-1">About Me</h2>
+          <h2 class="text-center mt-1 p-1" id="about">About Me</h2>
           <hr>
           <div class="row card-body card-text p-3">
             <div class="col-md-6">
@@ -250,8 +251,8 @@
     </section>
 
     <!--projects-->
-    <section id="projects" class="container py-5">
-      <div class="card hover-card p-4 p-md-5 rounded shadow-sm">
+    <section  class="container py-5">
+      <div class="card hover-card p-4 p-md-5 rounded shadow-sm" id="projects">
         <h2 class="text-center">My Projects</h2>
         <hr>
 
@@ -259,7 +260,7 @@
 
           <div class="col-md-6">
             <h3 class="fw-bold mt-2">Project 1: Responsive Personal Portfolio</h3>
-            <p class="text-secondary">You are now currently looking at my portfolio.</p>
+            <p class="text-primary fs-5">You are now currently looking at my portfolio.</p>
             <div class="mt-2">
               <span class="badge rounded-pill bg-primary">HTML</span>
               <span class="badge rounded-pill bg-success">CSS</span>
@@ -296,7 +297,7 @@
                           <p class="text-justify small">My first ever finish is the navbar and the banner, and i started
                             making the timeline on the project section, and the contact section, i didnt start on about
                             me section because i keep thinking on what i put here that is appealing to anyone who visit
-                            my portfolio.</p>
+                            my portfolio. i also added the certificates section so that they can see my achievments (i dont think they will stay longer though but some of them will be here for a while), and added a little feature of the portfolio which is the feedback button (at your bottom left corner, its a blue bubble message icon), and adding a little bit of database for the messages of feedbacks so that i can read them easily everywhere i go :3</p>
                         </div>
                       </div>
                       <div class="timeline-item">
@@ -381,8 +382,8 @@
     </section>
 
     <!--contacts-->
-    <section id="contacts" class="container py-5">
-      <div class="card hover-card p-5 rounded shadow-sm">
+    <section class="container py-5">
+      <div class="card hover-card p-5 rounded shadow-sm" id="contacts">
         <div class="row rounded">
 
           <!--leftside-->
@@ -496,6 +497,13 @@
           </div>
         </div>
 
+         <div class="col-md-4">
+          <div class="card hover-card border-0 shadow-sm" style="cursor: zoom-in;" data-bs-target="#galleryModal6"
+            data-bs-toggle="modal">
+            <img src="images/hokkage.jpg" class="card-img-top rounded" alt="Training">
+          </div>
+        </div>
+
       </div>
     </section>
 
@@ -554,7 +562,7 @@
 
     <script>
       new Typed("#typed", {
-        strings: ["Tester", "Software Developer", "College student", "Determined person B)"],
+        strings: ["Tester", "Aspiring Full-stack developer", "College student", "Determined person B)"],
         typeSpeed: 60,
         backSpeed: 40,
         loop: true
@@ -681,6 +689,24 @@
       </div>
     </div>
 
+    <div class="modal fade" id="galleryModal6" tabindex="-1" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content border-0 shadow-lg">
+          <div class="modal-body p-0">
+            <img src="images/hokkage.jpg" class="img-fluid w-100 rounded-top">
+          </div>
+          <div class="modal-footer d-block border-0 p-4">
+            <h5 class="fw-bold text-center text-dark">Dating hokkage sa Southern Leyte</h5>
+            <hr class="opacity-50">
+            <p class="text-secondary text-dark">Because tonight will be the night that i will fall for you 💔💔💔 </p>
+            <div class="text-end">
+              <button type="button" class="btn btn-sm btn-outline-secondary" data-bs-dismiss="modal">Close</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
     <!--certificates modal-->
     <div class="modal fade" id="certificateModal1" tabindex="1" aria-hidden="true">
       <div class="modal-dialog modal-dialog-centered modal-lg">
@@ -700,6 +726,34 @@
         </div>
       </div>
     </div>
+
+    <!--feedback modal and button-->
+    <button class="btn rounded-circle btn-secondary shadow feedback-btn" data-bs-toggle="modal" data-bs-target ="#feedbackModal">
+      <i class="bi bi-chat-left-text-fill"></i>
+    </button>
+
+      <div class="modal fade " id="feedbackModal" tabindex="1" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title text-black">Feedback</h5>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+              <h4 class="text-black fs-6 text-justify">Comment some feedback if there is any issues on my portfolio or adding more features (just for fun ig)</h4>
+              <textarea class="form-control">type here twin</textarea>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-primary" data-bs-dismiss="modal">Send</button>
+            </div>
+          </div>
+
+
+        </div>
+
+
+
+      </div>
 </body>
 
 </html>
