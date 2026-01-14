@@ -203,7 +203,7 @@
                   <div class="carousel-item active">
                     <div class="card h-100 hover-card mx-auto shadow-sm" style="max-width: 500px; cursor: zoom-in;"
                       data-bs-toggle="modal" data-bs-target="#certificateModal1">
-                      <img src="images/wait_lang.jpg" class="card-img-top" alt="Graduated">
+                      <img src="images/WIP.jpg" class="card-img-top" alt="Graduated">
                       <div class="card-body text-center">
                         <h5 class="card-title">Graduated</h5>
                         <p class="card-text">WIP</p>
@@ -214,7 +214,7 @@
                   <div class="carousel-item">
                     <div class="card h-100 hover-card mx-auto shadow-sm" style="max-width: 500px; cursor: zoom-in;"
                       data-bs-toggle="modal" data-bs-target="#certificateModal2">
-                      <img src="images/certificates/bsit.png" class="card-img-top" alt="BSIT">
+                      <img src="images/WIP.jpg" class="card-img-top" alt="BSIT">
                       <div class="card-body text-center">
                         <h5 class="card-title">WIP</h5>
                         <p class="card-text">WIP</p>
@@ -225,7 +225,7 @@
                   <div class="carousel-item">
                     <div class="card h-100 hover-card mx-auto shadow-sm" style="max-width: 500px; cursor: zoom-in;"
                       data-bs-toggle="modal" data-bs-target="#certificateModal3">
-                      <img src="images/certificates/bsit.png" class="card-img-top" alt="BSIT">
+                      <img src="images/WIP.jpg" class="card-img-top" alt="BSIT">
                       <div class="card-body text-center">
                         <h5 class="card-title">WIP</h5>
                         <p class="card-text">WIP</p>
@@ -357,13 +357,13 @@
               data-bs-ride="carousel">
               <div class="carousel-inner">
                 <div class="carousel-item active">
-                  <img src="images/wait_lang.jpg" class="d-block w-100 project-carousel-img" alt="Arduino Uno">
+                  <img src="images/WIP.jpg" class="d-block w-100 project-carousel-img" alt="Arduino Uno">
                   <div class="carousel-caption d-none d-md-block bg-dark bg-opacity-50 rounded p-1">
                     <p class="mb-0 small">WIP</p>
                   </div>
                 </div>
                 <div class="carousel-item">
-                  <img src="images/wait_lang.jpg" class="d-block w-100 project-carousel-img" alt="Final Setup">
+                  <img src="images/WIP.jpg" class="d-block w-100 project-carousel-img" alt="Final Setup">
                   <div class="carousel-caption d-none d-md-block bg-dark bg-opacity-50 rounded p-1">
                     <p class="mb-0 small">WIP</p>
                   </div>
@@ -592,7 +592,7 @@
     <hr>
     <footer class="text-info pb-4 container-sm my-3 text-md-center">
       <div class="fs-6">
-        <small class="fw-lighter">2025-2026, Jumarie Olarte its all i made B) (not all of it though :) )</small>
+        <small class="fw-lighter">2025-2026, Jumarie Olarte its all i made B)</small>
       </div>
     </footer>
 
@@ -737,29 +737,64 @@
       <i class="bi bi-chat-left-text-fill"></i>
     </button>
 
-    <div class="modal fade " id="feedbackModal" tabindex="1" aria-hidden="true">
-      <div class="modal-dialog modal-dialog-centered">
-        <div class="modal-content">
-          <div class="modal-header">
-            <h5 class="modal-title text-black">Feedback</h5>
-            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-          </div>
-          <div class="modal-body">
-            <h4 class="text-black fs-6 text-justify">Comment some feedback if there is any issues on my portfolio or
-              adding more features (just for fun ig)</h4>
-            <textarea class="form-control">type here twin</textarea>
-          </div>
-          <div class="modal-footer">
-            <button type="button" class="btn btn-primary" data-bs-dismiss="modal">Send</button>
-          </div>
-        </div>
-
-
+    <div class="modal fade" id="feedbackModal" tabindex="-1" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title text-black">Feedback</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
       </div>
-
-
-
+      <div class="modal-body">
+        <h4 class="text-black fs-6 text-justify">Comment some feedback if there is any issues on my portfolio or adding more features (just for fun ig)</h4>
+        <div class="my-3">
+          <input type="text" id="senderName" class="form-control" name="name" placeholder="Enter your name">
+        </div>
+        <textarea id="feedbackMessage" class="form-control" placeholder="type here twin"></textarea>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-primary" onclick="submitFeedback()">Send</button>
+      </div>
     </div>
+  </div>
+</div>
+
+<script>
+  async function submitFeedback() {
+    const name = document.getElementById('senderName').value;
+    const message = document.getElementById('feedbackMessage').value;
+    
+    // IMPORTANT: This MUST be the /exec URL from the "Deploy" button, not the Sheet link!
+    const scriptURL = 'https://script.google.com/macros/s/AKfycbxUbysotOw-UKxbZboLEspIRR4hRj5IkePTunlWAXkmmKdG3B5ca4L8T6ToMbTMA_zp/exec';
+
+    if (!name || !message) {
+      alert("Please fill out both fields!");
+      return;
+    }
+
+    try {
+      // We use 'no-cors' mode because Google Apps Script can be picky with redirecting browser requests
+      await fetch(scriptURL, {
+        method: 'POST',
+        mode: 'no-cors', 
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({ "name": name, "message": message }),
+      });
+
+      // Since 'no-cors' doesn't return a readable response, we assume success if no error is thrown
+      alert("Feedback sent! Thanks twin.");
+      document.getElementById('senderName').value = '';
+      document.getElementById('feedbackMessage').value = '';
+      
+      const modalElement = document.getElementById('feedbackModal');
+      const modal = bootstrap.Modal.getInstance(modalElement);
+      modal.hide();
+
+    } catch (error) {
+      console.error('Error!', error.message);
+      alert("Something went wrong. Check the console.");
+    }
+  }
+</script>
 </body>
 
 </html>
