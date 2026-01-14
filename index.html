@@ -763,7 +763,6 @@
     const name = document.getElementById('senderName').value;
     const message = document.getElementById('feedbackMessage').value;
     
-    // IMPORTANT: This MUST be the /exec URL from the "Deploy" button, not the Sheet link!
     const scriptURL = 'https://script.google.com/macros/s/AKfycbxUbysotOw-UKxbZboLEspIRR4hRj5IkePTunlWAXkmmKdG3B5ca4L8T6ToMbTMA_zp/exec';
 
     if (!name || !message) {
@@ -772,7 +771,6 @@
     }
 
     try {
-      // We use 'no-cors' mode because Google Apps Script can be picky with redirecting browser requests
       await fetch(scriptURL, {
         method: 'POST',
         mode: 'no-cors', 
@@ -780,7 +778,6 @@
         body: JSON.stringify({ "name": name, "message": message }),
       });
 
-      // Since 'no-cors' doesn't return a readable response, we assume success if no error is thrown
       alert("Feedback sent! Thanks twin.");
       document.getElementById('senderName').value = '';
       document.getElementById('feedbackMessage').value = '';

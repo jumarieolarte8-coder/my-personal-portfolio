@@ -41,7 +41,7 @@ form {
 }
 
 .text-justify {
-  text-align: justify !important  ; 
+  text-align: justify !important;
 }
 
 .profile-img {
@@ -159,12 +159,12 @@ section {
   transition: 0.5s ease;
 }
 
-.gallery-item img, 
+.gallery-item img,
 .card.hover-card img {
-    height: 500px !important;
-    width: 100%;
-    object-fit: cover;
-    object-position: center;
+  height: 500px !important;
+  width: 100%;
+  object-fit: cover;
+  object-position: center;
 }
 
 .gallery-item:hover .gallery-overlay {
@@ -212,16 +212,17 @@ section {
   border-radius: 12px;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
+
 .project-timeline {
   position: relative;
-  padding-left: 40px; 
+  padding-left: 40px;
   padding-top: 20px;
 }
 
 .project-timeline::before {
   content: "";
   position: absolute;
-  left: 15px; 
+  left: 15px;
   top: 0px;
   bottom: 0px;
   width: 2px;
@@ -241,14 +242,14 @@ section {
   background: #0d6efd;
   border-radius: 50%;
   position: absolute;
-  left: -31px; 
+  left: -31px;
   top: 12px;
   z-index: 2;
   border: 2px solid var(--bg-color);
 }
 
 .timeline-content {
-  margin-left: 10px; 
+  margin-left: 10px;
   background: #f8f9fa;
   padding: 15px;
   border-radius: 8px;
@@ -264,11 +265,11 @@ section {
   background: #b5a489;
 }
 
-.theme-dark .card, 
+.theme-dark .card,
 .theme-dark .timeline-content {
-    background-color: #1e1e1e !important;
-    color: white !important;
-    border: 1px solid #333;
+  background-color: #1e1e1e !important;
+  color: white !important;
+  border: 1px solid #333;
 }
 
 .timeline-item:hover .timeline-content {
@@ -294,7 +295,7 @@ section {
 
 .theme-dark [data-bs-toggle="collapse"]:hover {
   background-color: rgba(255, 255, 255, 0.1);
-  
+
 }
 
 .arrow-icon {
@@ -340,46 +341,51 @@ section {
 }
 
 .project-carousel-img {
-    height: 350px;
-    object-fit: cover;
-    object-position: center;
+  height: 350px;
+  object-fit: cover;
+  object-position: center;
 }
 
 .carousel-item.active img {
-    animation: zoom 5s infinite alternate;
+  animation: zoom 5s infinite alternate;
 }
 
 @keyframes zoom {
-    from { transform: scale(1); }
-    to { transform: scale(1.05); }
+  from {
+    transform: scale(1);
+  }
+
+  to {
+    transform: scale(1.05);
+  }
 }
 
 .project-carousel-img {
-    height: 350px;
-    object-fit: cover;
-    object-position: center;
+  height: 350px;
+  object-fit: cover;
+  object-position: center;
 }
 
 .col-md-6 {
-    display: flex;
-    flex-direction: column;
+  display: flex;
+  flex-direction: column;
 }
 
 .feedback-btn {
-    position: fixed;
-    bottom: 20px;  
-    right: 20px; 
-    width: 60px;
-    height: 60px;
-    z-index: 1050; 
-    background-color: #007bff;
-    color: #fff;
-    border-radius: 50%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-size: 24px;
-    transition: transform 0.3s ease;
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  width: 60px;
+  height: 60px;
+  z-index: 1050;
+  background-color: #007bff;
+  color: #fff;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 24px;
+  transition: transform 0.3s ease;
 }
 
 .feedback-btn:hover {
