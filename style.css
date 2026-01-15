@@ -391,3 +391,25 @@ section {
 .feedback-btn:hover {
   transform: scale(1.1);
 }
+
+.theme-dark .feedback-btn {
+  background-color: #007bff;
+  color: #fff;
+}
+
+.theme-sepia .feedback-btn {
+  background-color: #b5a489;
+  color: #fff;
+}
+
+.feedback-btn:hover {
+  transform: scale(1.1);
+}
+
+.theme-sepia .feedback-btn:hover {
+  transform: scale(1.1);
+}
+
+.theme-dark .feedback-btn:hover {
+  transform: scale(1.1);
+}
