@@ -1,5 +1,9 @@
 .board {
     display: grid;
+<<<<<<< HEAD
+=======
+  
+>>>>>>> df7d0459df332bb8c52689567f0cd6b806edf2fc
     grid-template-columns: repeat(9, 1fr); 
     width: 95vw;
     max-width: 450px;
@@ -26,15 +30,26 @@ input::-webkit-inner-spin-button {
     height: 100%;
     text-align: center;
     font-size: 1.5rem;
+<<<<<<< HEAD
     border: 1px solid #ddd;
     
+=======
+    border: 1px solid lightgray;
+    outline: none;
+    
+    box-sizing: border-box; 
+>>>>>>> df7d0459df332bb8c52689567f0cd6b806edf2fc
 }
 
 .sudoku-cell:nth-child(3n) {
     border-right: 3px solid black;
 }
 .sudoku-cell:nth-child(9n) {
+<<<<<<< HEAD
     border-right: 1px solid lightgray; 
+=======
+    border-right: 1px solid lightgray;
+>>>>>>> df7d0459df332bb8c52689567f0cd6b806edf2fc
 }
 
 .sudoku-cell:nth-child(n+19):nth-child(-n+27),
@@ -45,6 +60,7 @@ input::-webkit-inner-spin-button {
 .filled-cell {
     background-color: lightgray;
     color: black;
+<<<<<<< HEAD
     font-weight: bold;
 }
 
@@ -61,3 +77,6 @@ input::-webkit-inner-spin-button {
         font-size: 1.2rem;
     }
 }
+=======
+}
+>>>>>>> df7d0459df332bb8c52689567f0cd6b806edf2fc
