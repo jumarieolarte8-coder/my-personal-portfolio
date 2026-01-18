@@ -180,3 +180,7 @@ function hintGame() {
   alert("Hint feature coming soon!");
 }
 createCells();
+
+document.getElementById("backPortfolio").addEventListener("click", function () {
+  window.location.href = "../index.html";
+})

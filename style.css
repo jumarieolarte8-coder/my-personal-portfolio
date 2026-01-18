@@ -11,6 +11,7 @@ html {
 
 :root {
   --banner-bg: #d9e3ec;
+  --big-color: #ffffff;
 }
 
 
@@ -35,9 +36,10 @@ form {
   cursor: zoom-in;
 }
 
-.description {
-  text-align: justify;
+.description .text-justify {
+  text-align: justify !important;
   text-justify: inter-word;
+  line-height: 1.6;
 }
 
 .text-justify {
@@ -55,18 +57,21 @@ form {
 .theme-light {
   --banner-bg: #d9e3ec;
   background: #ffffff;
+  --bg-color: #ffffff;
   color: #000;
 }
 
 .theme-dark {
   --banner-bg: #1f2933;
   background: #121212;
+  --bg-color: #121212;
   color: #ffffff;
 }
 
 .theme-sepia {
   --banner-bg: #f1e7d0;
   background: #f8f1e4;
+  --bg-color: #f8f1e4;
   color: #5b4636;
 }
 
@@ -175,7 +180,20 @@ section {
   transform: scale(1.1);
 }
 
+@media (max-width: 576px) {
+  body {
+    font-size: 14px;
+  }
+  .container {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
 
+  .text-justify{
+    width: 100%;
+    padding: 0;
+  }
+}
 
 #formSuccess {
   animation: fadeIn 0.4s ease-in-out;
@@ -266,7 +284,8 @@ section {
 }
 
 .theme-dark .card,
-.theme-dark .timeline-content {
+.theme-dark 
+.timeline-content {
   background-color: #1e1e1e !important;
   color: white !important;
   border: 1px solid #333;
@@ -412,4 +431,11 @@ section {
 
 .theme-dark .feedback-btn:hover {
   transform: scale(1.1);
+}
+
+section p .text-justify{
+  width: 100%;
+  max-width: 100%;
+  padding: 0, 10px;
+  line-height: 1.6px;
 }

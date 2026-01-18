@@ -9,21 +9,26 @@
   <title>Sudoku!</title>
 </head>
 
-<body class="p-0 m-0">
-  <div class="container-fluid d-flex justify-content-center align-items-center" style="height: 100vh;">
+<body class="p-0 m-0 bg-dark-subtle ">
+  <div class="container-fluid d-flex justify-content-center align-items-center min-vh-100 p-2">
 
-    <div class="row g-4 align-items-center">
-      <div class="col-md-6 text-center text-md-start">
-        <h1 id="score">0</h1>
-        <div class="d-flex flex-column">
-        <button class="btn btn-warning rounded-1 mt-2" id="restart">Restart</button>
-        <button class="btn btn-primary rounded-1 mt-2" href="index.html">Go back to portfolio</button>
-        <button class="btn btn-secondary rounded-1 mt-2" id="hint">Hint</button>
-        <button class="btn btn-primary rounded-1 mt-2" id="newGame">Start</button>
-        <button class="btn btn-danger rounded-1 mt-2" id="check">Check Result</button>
+    <div class="row g-4 w-100 justify-content-center align-items-start">
+      <div class="col-md-4 d-flex flex-column align-items-center align-items-md-end">
+        <div class="card shadow-sm p-2 m-3 w-75">
+        <h2 class=" fst-italic family-verdana"><span class="text-primary  ">Sudoku!</span></h2>
+        <h4 class="family-verdana fst-italic">score</h4>
+        <h1 id="score" class="mb-3">0</h1>
+        </div>
+        <div class="d-grid gap-2 w-100 card shadow-sm m-3 p-3" style="max-width: 250px;">
+          <button class="btn btn-warning rounded-1" id="restart">Restart</button>
+          <a id="backPortfolio" class="btn btn-primary rounded-1">Go back to portfolio</a>
+          <button class="btn btn-secondary rounded-1" id="hint">Hint</button>
+          <button class="btn btn-primary rounded-1" id="newGame">Start</button>
+          <button class="btn btn-danger rounded-1" id="check">Check Result</button>
         </div>
       </div>
-      <div class="col-md-6 mt-3 mt-md-0">
+
+      <div class="col-md-6 d-flex justify-content-center justify-content-md-start">
         <div class="board" id="board"></div>
       </div>
     </div>

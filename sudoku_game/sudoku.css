@@ -1,29 +1,40 @@
 .board {
     display: grid;
-    /* This is what makes it a square! */
     grid-template-columns: repeat(9, 1fr); 
-    width: 450px;
+    width: 95vw;
+    max-width: 450px;
+    aspect-ratio: 1 / 1;
     height: 450px;
+    margin: 0, auto;
     border: 3px solid black;
+    gap: 1px;
+    background-color: black;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+.btn textarea {
+    resize: none;
 }
 
 .sudoku-cell {
-    width: 50px;
-    height: 50px;
+    width: 100%;
+    height: 100%;
     text-align: center;
     font-size: 1.5rem;
-    border: 1px solid lightgray;
-    outline: none;
-    /* This prevents the thick borders from pushing cells out of alignment */
-    box-sizing: border-box; 
+    border: 1px solid #ddd;
+    
 }
 
-/* Thicker lines for the 3x3 subgrids */
 .sudoku-cell:nth-child(3n) {
     border-right: 3px solid black;
 }
 .sudoku-cell:nth-child(9n) {
-    border-right: 1px solid lightgray; /* Resets the far right edge */
+    border-right: 1px solid lightgray; 
 }
 
 .sudoku-cell:nth-child(n+19):nth-child(-n+27),
@@ -34,4 +45,19 @@
 .filled-cell {
     background-color: lightgray;
     color: black;
+    font-weight: bold;
+}
+
+@media (max-width: 576px) {
+    h1#score {
+        font-size: 2rem;
+        margin-top: 20px;
+    }
+    .btn {
+        font-size: 0.9rem;
+        padding: 8px 12px;
+    }
+    .sudoku-cell{
+        font-size: 1.2rem;
+    }
 }
