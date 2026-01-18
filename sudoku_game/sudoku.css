@@ -1,6 +1,6 @@
 .board {
     display: grid;
-    /* This is what makes it a square! */
+  
     grid-template-columns: repeat(9, 1fr); 
     width: 450px;
     height: 450px;
@@ -14,16 +14,15 @@
     font-size: 1.5rem;
     border: 1px solid lightgray;
     outline: none;
-    /* This prevents the thick borders from pushing cells out of alignment */
+    
     box-sizing: border-box; 
 }
 
-/* Thicker lines for the 3x3 subgrids */
 .sudoku-cell:nth-child(3n) {
     border-right: 3px solid black;
 }
 .sudoku-cell:nth-child(9n) {
-    border-right: 1px solid lightgray; /* Resets the far right edge */
+    border-right: 1px solid lightgray;
 }
 
 .sudoku-cell:nth-child(n+19):nth-child(-n+27),
